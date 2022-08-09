@@ -41,4 +41,5 @@ function game(){
     }
 }
 
-game()
+const rock= document.querySelector(".rock")
+rock.addEventListener("click",function(e){if(this.className=="rock")console.log("caca")})

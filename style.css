@@ -1,0 +1,42 @@
+html{
+    text-align: center;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.display{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    border:1px solid;
+    height:40px;
+    width:600px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height:50px;
+    border:5px solid;
+}
