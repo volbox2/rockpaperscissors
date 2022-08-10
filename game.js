@@ -18,6 +18,7 @@ function getRandomNumber(min,max){
 function playRound(playerSelection,computerSelection){
 
     playerSelection = playerSelection.toLowerCase()
+    console.log(computerSelection);
     if (computerSelection==="Rock"){
         if (playerSelection==="rock")  {return ("It's a draw")}
         else if(playerSelection==="scissors") {computerScore+=1;return ("You Lose! Rock beats Scissors!")}
@@ -50,10 +51,10 @@ function game(){
    
 }
 
-function getPlayerChoice(){;
+function getPlayerChoice(){
     let text;
-    if (this.id="rock"){text= playRound("rock",getComputerChoice());}
-    else if(this.id="paper"){text = playRound("paper",getComputerChoice());}    
+    if (this.id==="rock"){text= playRound("rock",getComputerChoice());}
+    else if(this.id==="paper"){text = playRound("paper",getComputerChoice());}    
     else{text = playRound("scissors",getComputerChoice());} 
     display.textContent = text;
     checkWinner(playerScore,computerScore);
